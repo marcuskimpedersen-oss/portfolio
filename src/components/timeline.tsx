@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Animate from "@/components/animate";
 
 const experience = [
@@ -7,6 +8,7 @@ const experience = [
     date: "Aug 2024 — Present",
     role: "Learning Designer",
     org: "UN/WHO, London",
+    logo: "/logos/who.png",
     description:
       "Design learning courses, workshops, and other learning experiences aligned with WHO priorities and initiatives. Collaborate with subject matter experts to create evidence-based, culturally appropriate content working with the UHC competency domains.",
   },
@@ -14,6 +16,7 @@ const experience = [
     date: "Feb 2022 — Aug 2024",
     role: "Learning Technologist",
     org: "UCL, London",
+    logo: "/logos/ucl.svg",
     description:
       "Developed the digital pedagogy of UCL academics. Designed interactive and novel ways of educating students, staff and leaders across the institution. Presented at national and international conferences.",
   },
@@ -21,6 +24,7 @@ const experience = [
     date: "Sept 2020 — Feb 2022",
     role: "Learning Technologist",
     org: "Moorfields Eye Hospital, London",
+    logo: "/logos/moorfields.png",
     description:
       "Developed the digital pedagogy of MEH/UCL academics. Designed interactive learning for students, patients, staff and leaders. Secured grants for AR education and diabetic retinopathy learning environments.",
   },
@@ -28,6 +32,7 @@ const experience = [
     date: "Sept 2019 — Aug 2020",
     role: "Learning Technologist",
     org: "Journal of Visualised Experiments, London",
+    logo: "/logos/jove.svg",
     description:
       "Helped Nordic universities, schools and research institutes implement JoVE video content and teaching tools into courses and research labs. Experienced across all major LMS platforms.",
   },
@@ -38,11 +43,13 @@ const education = [
     date: "2017 — 2018",
     role: "Masters of Teaching",
     org: "University of Melbourne, Australia",
+    logo: "/logos/unimelb.svg",
   },
   {
     date: "2013 — 2016",
     role: "Bachelor of Teaching",
     org: "University of Melbourne, Australia",
+    logo: "/logos/unimelb.svg",
   },
 ];
 
@@ -70,6 +77,15 @@ export default function Timeline() {
 
                 {/* Content */}
                 <div className={`w-full pl-10 sm:w-1/2 sm:pl-0 ${i % 2 === 0 ? "sm:pr-12" : "sm:pl-12"}`}>
+                  <div className="mb-3 h-10 w-auto">
+                    <Image
+                      src={item.logo}
+                      alt={`${item.org} logo`}
+                      width={120}
+                      height={40}
+                      className="h-10 w-auto object-contain dark:brightness-0 dark:invert"
+                    />
+                  </div>
                   <p className="mb-1 text-xs font-medium uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
                     {item.date}
                   </p>
@@ -108,6 +124,15 @@ export default function Timeline() {
                 <div className="absolute left-4 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-indigo-600 bg-white dark:border-indigo-400 dark:bg-gray-950 sm:left-1/2" />
 
                 <div className={`w-full pl-10 sm:w-1/2 sm:pl-0 ${i % 2 === 0 ? "sm:pr-12" : "sm:pl-12"}`}>
+                  <div className="mb-3 h-10 w-auto">
+                    <Image
+                      src={item.logo}
+                      alt={`${item.org} logo`}
+                      width={120}
+                      height={40}
+                      className="h-10 w-auto object-contain dark:brightness-0 dark:invert"
+                    />
+                  </div>
                   <p className="mb-1 text-xs font-medium uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
                     {item.date}
                   </p>
