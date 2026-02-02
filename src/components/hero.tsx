@@ -18,16 +18,17 @@ export default function Hero() {
         </Animate>
         <Animate direction="up" delay={200}>
           <p className="mb-8 text-lg text-gray-500 dark:text-gray-400">
-            A developer who builds clean, performant web experiences.
+            Learning Designer building digital ecosystems that transform how
+            people learn. 20+ conference presentations. Published researcher.
           </p>
         </Animate>
         <Animate direction="up" delay={300}>
           <div className="flex justify-center gap-4">
             <a
-              href="#projects"
+              href="#experience"
               className="rounded-lg bg-indigo-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-indigo-500"
             >
-              View My Work
+              View My Experience
             </a>
             <a
               href="#contact"

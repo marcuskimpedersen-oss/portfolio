@@ -12,23 +12,27 @@ export default function About() {
         <div className="space-y-4 leading-relaxed text-gray-500 dark:text-gray-400">
           <Animate delay={100}>
             <p>
-              I&apos;m a software developer passionate about building things for
-              the web. I enjoy turning complex problems into simple, elegant
-              solutions.
+              I&apos;m a Learning Designer with a background in teaching and
+              educational technology. I&apos;ve trained hundreds of academics,
+              clinicians, and leaders on their digital pedagogy and built
+              learning ecosystems for thousands of learners.
             </p>
           </Animate>
           <Animate delay={200}>
             <p>
-              My focus is on creating responsive, accessible, and performant
-              applications using modern technologies like React, TypeScript, and
-              Node.js.
+              My work sits at the intersection of pedagogy, technology, and
+              research. I design evidence-based courses, workshops, and digital
+              learning experiences — collaborating with subject matter experts to
+              create content that is both rigorous and accessible.
             </p>
           </Animate>
           <Animate delay={300}>
             <p>
-              When I&apos;m not coding, you can find me exploring new
-              technologies, contributing to open source, or learning something
-              new.
+              I&apos;ve presented my research at over 20 national and
+              international conferences and have been published in journals
+              including the BMJ and the Journal of Emergency Medicine. I hold a
+              Fellowship of the Higher Education Academy (FHEA) and a CMALT
+              accreditation.
             </p>
           </Animate>
         </div>

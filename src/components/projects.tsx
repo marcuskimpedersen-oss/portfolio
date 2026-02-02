@@ -4,24 +4,24 @@ import Animate from "@/components/animate";
 
 const projects = [
   {
-    title: "Project One",
+    title: "WHO Learning Courses",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL. Features real-time updates and responsive design.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+      "Evidence-based learning experiences aligned with WHO priorities, designed in collaboration with global subject matter experts across UHC competency domains.",
+    tags: ["Learning Design", "WHO", "UHC"],
     link: "#",
   },
   {
-    title: "Project Two",
+    title: "UCL Digital Pedagogy",
     description:
-      "A CLI tool that automates common development workflows, saving hours of repetitive work.",
-    tags: ["Node.js", "TypeScript", "CLI"],
+      "Transformed the digital teaching practices of academics across UCL through interactive workshops, novel learning tools, and research-driven approaches.",
+    tags: ["EdTech", "UCL", "Research"],
     link: "#",
   },
   {
-    title: "Project Three",
+    title: "AR Education App",
     description:
-      "An open-source component library with accessible, customizable UI primitives.",
-    tags: ["React", "Tailwind CSS", "Storybook"],
+      "Grant-funded augmented reality application for medical education at Moorfields Eye Hospital, bringing clinical scenarios to life for learners.",
+    tags: ["AR", "Grant-funded", "Medical Ed"],
     link: "#",
   },
 ];
