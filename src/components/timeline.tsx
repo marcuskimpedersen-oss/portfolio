@@ -47,7 +47,7 @@ const education = [
   },
   {
     date: "2013 — 2016",
-    role: "Bachelor of Teaching",
+    role: "Bachelor of Geography",
     org: "University of Melbourne, Australia",
     logo: "/logos/unimelb.svg",
   },
@@ -55,7 +55,7 @@ const education = [
 
 export default function Timeline() {
   return (
-    <section id="experience" className="border-t border-gray-200 py-24 dark:border-gray-800">
+    <section id="experience" className="border-t border-stone-200 py-24 dark:border-stone-800">
       <div className="mx-auto max-w-3xl px-6">
         <Animate>
           <h2 className="mb-16 text-center text-3xl font-bold">Experience</h2>
@@ -63,7 +63,7 @@ export default function Timeline() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-4 top-0 h-full w-px bg-gray-200 dark:bg-gray-800 sm:left-1/2" />
+          <div className="absolute left-4 top-0 h-full w-px bg-stone-200 dark:bg-stone-800 sm:left-1/2" />
 
           {experience.map((item, i) => (
             <Animate key={item.org} delay={i * 150}>
@@ -73,7 +73,7 @@ export default function Timeline() {
                 }`}
               >
                 {/* Dot */}
-                <div className="absolute left-4 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-indigo-600 bg-white dark:border-indigo-400 dark:bg-gray-950 sm:left-1/2" />
+                <div className="absolute left-4 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-taupe-600 bg-white dark:border-taupe-400 dark:bg-taupe-950 sm:left-1/2" />
 
                 {/* Content */}
                 <div className={`w-full pl-10 sm:w-1/2 sm:pl-0 ${i % 2 === 0 ? "sm:pr-12" : "sm:pl-12"}`}>
@@ -86,15 +86,15 @@ export default function Timeline() {
                       className="h-10 w-auto object-contain dark:brightness-0 dark:invert"
                     />
                   </div>
-                  <p className="mb-1 text-xs font-medium uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+                  <p className="mb-1 text-xs font-medium uppercase tracking-wider text-taupe-600 dark:text-taupe-400">
                     {item.date}
                   </p>
                   <h3 className="text-lg font-semibold">{item.role}</h3>
-                  <p className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+                  <p className="mb-2 text-sm font-medium text-stone-500 dark:text-stone-400">
                     {item.org}
                   </p>
                   {item.description && (
-                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+                    <p className="text-sm leading-relaxed text-stone-500 dark:text-stone-400">
                       {item.description}
                     </p>
                   )}
@@ -112,7 +112,7 @@ export default function Timeline() {
         </Animate>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 h-full w-px bg-gray-200 dark:bg-gray-800 sm:left-1/2" />
+          <div className="absolute left-4 top-0 h-full w-px bg-stone-200 dark:bg-stone-800 sm:left-1/2" />
 
           {education.map((item, i) => (
             <Animate key={item.role} delay={i * 150}>
@@ -121,7 +121,7 @@ export default function Timeline() {
                   i % 2 === 0 ? "sm:flex-row-reverse" : ""
                 }`}
               >
-                <div className="absolute left-4 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-indigo-600 bg-white dark:border-indigo-400 dark:bg-gray-950 sm:left-1/2" />
+                <div className="absolute left-4 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-taupe-600 bg-white dark:border-taupe-400 dark:bg-taupe-950 sm:left-1/2" />
 
                 <div className={`w-full pl-10 sm:w-1/2 sm:pl-0 ${i % 2 === 0 ? "sm:pr-12" : "sm:pl-12"}`}>
                   <div className="mb-3 h-10 w-auto">
@@ -133,11 +133,11 @@ export default function Timeline() {
                       className="h-10 w-auto object-contain dark:brightness-0 dark:invert"
                     />
                   </div>
-                  <p className="mb-1 text-xs font-medium uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+                  <p className="mb-1 text-xs font-medium uppercase tracking-wider text-taupe-600 dark:text-taupe-400">
                     {item.date}
                   </p>
                   <h3 className="text-lg font-semibold">{item.role}</h3>
-                  <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  <p className="text-sm font-medium text-stone-500 dark:text-stone-400">
                     {item.org}
                   </p>
                 </div>
