@@ -5,10 +5,12 @@ import Timeline from "@/components/timeline";
 import Projects from "@/components/projects";
 import Publications from "@/components/publications";
 import Contact from "@/components/contact";
+import AcrobaticFigure from "@/components/acrobatic-figure";
 
 export default function Home() {
   return (
     <>
+      <AcrobaticFigure />
       <Navbar />
       <main>
         <Hero />
@@ -18,7 +20,7 @@ export default function Home() {
         <Publications />
         <Contact />
       </main>
-      <footer className="border-t border-gray-200 py-6 text-center text-sm text-gray-400 dark:border-gray-800 dark:text-gray-500">
+      <footer className="border-t border-stone-200 py-6 text-center text-sm text-stone-400 dark:border-stone-800 dark:text-stone-500">
         &copy; {new Date().getFullYear()} Marcus Pedersen. All rights reserved.
       </footer>
     </>

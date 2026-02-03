@@ -129,6 +129,9 @@ export default function Projects() {
             <h3 className="mb-6 text-xl font-bold">
               {projects[openProject].title}
             </h3>
+            <p className="mb-3 text-xs text-stone-400 dark:text-stone-500">
+              Click a term to see its definition
+            </p>
             <div className="flex flex-wrap gap-2">
               {projects[openProject].terms.map(({ term }) => (
                 <button
@@ -136,10 +139,10 @@ export default function Projects() {
                   onClick={() =>
                     setSelectedTerm(selectedTerm === term ? null : term)
                   }
-                  className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+                  className={`cursor-pointer rounded-full px-4 py-1.5 text-sm font-medium underline decoration-taupe-300 underline-offset-2 transition-colors dark:decoration-taupe-700 ${
                     selectedTerm === term
-                      ? "bg-taupe-200 text-taupe-800 ring-1 ring-taupe-400 dark:bg-taupe-800 dark:text-taupe-200 dark:ring-taupe-600"
-                      : "bg-taupe-100 text-taupe-700 hover:bg-taupe-200 dark:bg-taupe-900 dark:text-taupe-300 dark:hover:bg-taupe-800"
+                      ? "bg-taupe-200 text-taupe-800 decoration-taupe-500 ring-1 ring-taupe-400 dark:bg-taupe-800 dark:text-taupe-200 dark:decoration-taupe-400 dark:ring-taupe-600"
+                      : "bg-taupe-100 text-taupe-700 hover:bg-taupe-200 hover:decoration-taupe-500 dark:bg-taupe-900 dark:text-taupe-300 dark:hover:bg-taupe-800 dark:hover:decoration-taupe-400"
                   }`}
                 >
                   {term}

@@ -9,7 +9,7 @@ export default function About() {
         <Animate>
           <h2 className="mb-12 text-center text-3xl font-bold">About Me</h2>
         </Animate>
-        <div className="space-y-4 leading-relaxed text-gray-500 dark:text-gray-400">
+        <div className="space-y-4 leading-relaxed text-stone-500 dark:text-stone-400">
           <Animate delay={100}>
             <p>
               I&apos;m a Learning Designer with a background in teaching and

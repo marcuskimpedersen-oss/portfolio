@@ -15,7 +15,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
+    <nav className="fixed top-0 z-50 w-full border-b border-stone-200 bg-taupe-50/80 backdrop-blur-md dark:border-stone-800 dark:bg-taupe-950/80">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a href="#" className="text-lg font-bold tracking-tight">
           MP
@@ -27,7 +27,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              className="text-sm text-stone-500 transition-colors hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
             >
               {l.label}
             </a>
@@ -70,13 +70,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="border-t border-gray-200 px-6 pb-4 dark:border-gray-800 md:hidden">
+        <ul className="border-t border-stone-200 px-6 pb-4 dark:border-stone-800 md:hidden">
           {links.map((l) => (
             <li key={l.href} className="py-2">
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                className="text-sm text-stone-500 transition-colors hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
               >
                 {l.label}
               </a>
